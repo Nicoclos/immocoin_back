@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  # test
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :users, only: %w[show index]
+      resources :realties
+    end
+  end
   devise_for :users,
   defaults: { format: :json },
   path: '',
@@ -11,7 +18,7 @@ Rails.application.routes.draw do
     sessions: 'sessions',
     registrations: 'registrations'
   }
-  resources :realties
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
