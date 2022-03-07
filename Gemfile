@@ -49,3 +49,5 @@ end
 #my gems
 gem 'faker'
 gem 'jwt'
+gem 'devise '
+gem 'devise-jwt'
