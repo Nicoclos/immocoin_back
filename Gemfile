@@ -49,5 +49,6 @@ end
 #my gems
 gem 'faker'
 gem 'jwt'
-gem 'devise '
+gem 'devise'
 gem 'devise-jwt'
+gem 'table_print'
