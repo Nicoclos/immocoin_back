@@ -4,8 +4,8 @@ class CreateRealties < ActiveRecord::Migration[7.0]
       t.string :title
       t.integer :price
       t.text :description
-      t.string :city
-      t.references :user, null: false, foreign_key: true
+      t.belongs_to :user, index: true
+      t.belongs_to :city, index: true
 
       t.timestamps
     end
