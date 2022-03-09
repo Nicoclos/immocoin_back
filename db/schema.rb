@@ -10,6 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema[7.0].define(version: 0) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+=======
 ActiveRecord::Schema[7.0].define(version: 2022_03_09_102425) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,4 +61,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_09_102425) do
   end
 
   add_foreign_key "realties", "cities"
+>>>>>>> ce16ff3a607abad1e77a91885025703be0a9aaa5
 end
