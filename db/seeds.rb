@@ -15,7 +15,6 @@ Realty.destroy_all
   User.create!(
     first_name:Faker::Name.first_name,
     last_name: Faker::Name.last_name,
-    phone_number: Faker::PhoneNumber.cell_phone,
     age: Faker::Number.between(from: 18, to: 100),
     email: Faker::Internet.email,
     password: Faker::Internet.password
