@@ -15,6 +15,7 @@ Realty.destroy_all
   User.create!(
     first_name:Faker::Name.first_name,
     last_name: Faker::Name.last_name,
+    phone_number: Faker::PhoneNumber.cell_phone,
     age: Faker::Number.between(from: 18, to: 100),
     email: Faker::Internet.email,
     password: Faker::Internet.password
@@ -33,8 +34,6 @@ end
     title: Faker::TvShows::GameOfThrones.character,
     price: Faker::Number.between(from: 30000, to: 10000000),
     description:Faker::Lorem.paragraph(sentence_count: 10, supplemental: true, random_sentences_to_add: 50),
-    user: User.all.sample,
-    city: City.all.sample
   )
 end
 
