@@ -5,7 +5,6 @@ class CreateRealties < ActiveRecord::Migration[7.0]
       t.integer :price
       t.text :description
       t.belongs_to :user, index: true
-      t.belongs_to :city, index: true
 
       t.timestamps
     end
