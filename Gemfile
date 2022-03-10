@@ -51,6 +51,9 @@ gem 'faker'
 gem 'jwt'
 gem 'devise'
 
+
+
+
 gem 'devise-jwt'
 gem 'listen'
 gem 'table_print'
