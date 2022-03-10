@@ -33,6 +33,7 @@ end
     title: Faker::TvShows::GameOfThrones.character,
     price: Faker::Number.between(from: 30000, to: 10000000),
     description:Faker::Lorem.paragraph(sentence_count: 10, supplemental: true, random_sentences_to_add: 50),
+    image: "https://source.unsplash.com/random/900x700/?flats"
   )
 end
 
