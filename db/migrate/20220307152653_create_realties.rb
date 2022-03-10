@@ -4,6 +4,7 @@ class CreateRealties < ActiveRecord::Migration[7.0]
       t.string :title
       t.integer :price
       t.text :description
+      t.string :image
 
       t.timestamps
     end

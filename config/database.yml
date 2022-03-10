@@ -82,5 +82,6 @@ test:
 production:
   <<: *default
   database: immocoin_back_production
+  adatapter: 'postgresql'
   username: immocoin_back
   password: <%= ENV["IMMOCOIN_BACK_DATABASE_PASSWORD"] %>
